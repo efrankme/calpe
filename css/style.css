@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	color: #1b1b1b;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+address {
+	font-style: normal;
+}
+
+.banner-head {
+	background: lightskyblue url(../img/banner-head.jpg) center top / cover;
+}
+
+.banner-gracias {
+	background: lightskyblue url(../img/banner-gracias.jpg) center top / cover;
+}
+
+.banner-chef {
+	background: url(../img/joel_rob.png) center / cover;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.rectangulo {
+	width: 100%;
+	height: 400px;
+}
+
+.py-7 {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.is-blue {
+	color: #0d96c0;
+}
+
+.button.is-blue, .map-content.is-blue {
+	color: white;
+	background: #096f95;
+}
+
+.cuadro {
+	padding: 5em !important;
+	padding-top: 15em !important;
+	padding-right: 18em !important;
+}
+
+.cuadro-1 {
+	background: url(../img/cuadro-1.png) right bottom / cover;
+}
+.cuadro-2 {
+	background: url(../img/cuadro-2.png) left bottom / cover;
+}
+.cuadro-3 {
+	background: url(../img/cuadro-3.png) right top / cover;
+}
+.cuadro-4 {
+	background: url(../img/cuadro-4.png) left top / cover;
+}
+
+.has-text-white strong {
+	color: white;
+}
+
+.input,
+.select,
+.textarea {
+	border-color: #bababa;
+	color: #111;
+}
+
+.input::placeholder,
+.select select::placeholder,
+.textarea::placeholder {
+	color: #1b1b1b;
+}
+
+
+.mapa {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.gmap {
+	position: relative;
+	top: -45%;
+	z-index: 1;
+}
+
+.map-content {
+	position: relative;
+	z-index: 3;
+	line-height: 2.5;
+}
+
+.map-content.is-blue {
+	color: white !important;
+	background: rgba(13, 149, 191, 0.9);
+}
+
+.map-content.is-blue a, .map-content.is-blue strong {
+	color: #eee;
+}
+
+.is-size-8-mobile {
+	font-size: 0.85rem;
+}
+
+.oculto {
+	opacity: 0;
+	transition: all .4s ease;
+}
+
+@media (max-width: 768px) {
+	.banner-chef {
+		background: url(../img/joel_rob.png) right center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.texto-chef {
+		margin: 0 !important;
+	}
+
+	.seccion-gris {
+		padding: 0.6rem !important;
+	}
+
+	.cuadro {
+		padding: 2em !important;
+		padding-top: 4em !important;
+	}
+
+	.columna-izq {
+		padding: 0 !important;
+	}
+
+	.columna-izq .p-6 {
+		padding: 1.5rem !important;
+	}
+
+	.mapa {
+		position: static;
+	}
+}
