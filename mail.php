@@ -1,7 +1,12 @@
 <?php
 if ($_POST) {
-    $to = "info@calpehomegroup.com ";// 
-    $subject = 'Landing Despegue - Nueva solicitud';
+    $to = "info@calpehomegroup.com "; // 
+    if (isset($_POST['lang'])) {
+        $lang = $_POST['lang'];
+        $subject = "Landing Despegue $lang - Nueva solicitud";
+    } else {
+        $subject = "Landing Despegue - Nueva solicitud";
+    }
     $name = $_POST['nombre'];
     $email = $_POST['email'];
     $phone = $_POST['telf'];

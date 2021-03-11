@@ -97,8 +97,8 @@
 							</h2>
 							<a
 								href="#contacto"
-								class="button is-black has-text-weight-semibold is-size-8-mobile is-size-5-tablet p-4"
-								>SOLICITA UNA LLAMADA CON CALPE HOME GROUP</a
+								class="button is-black has-text-weight-semibold is-size-8-mobile is-size-5-tablet"
+								>DEMANDER À ÊTRE RAPPELÉS PAR CALPE HOME GROUP</a
 							>
 						</div>
 						<div class="column">
@@ -200,8 +200,8 @@
 
 							<a
 								href="#contacto"
-								class="button is-blue has-text-weight-semibold is-size-8-mobile is-size-5-tablet p-3"
-								>SOLICITA UNA LLAMADA CON CALPE HOME GROUP
+								class="button is-blue has-text-weight-semibold is-size-8-mobile is-size-5-tablet"
+								>DEMANDER À ÊTRE RAPPELÉS PAR CALPE HOME GROUP
 							</a>
 
 							<br class="my-5" />
@@ -314,7 +314,7 @@
 													name="nombre"
 													class="input is-rounded"
 													type="text"
-													placeholder="Nombre"
+													placeholder="Nom"
 													required
 												/>
 											</div>
@@ -336,7 +336,7 @@
 													name="telf"
 													class="input is-rounded"
 													type="tel"
-													placeholder="Teléfono"
+													placeholder="Téléphone"
 													required
 												/>
 											</div>
@@ -347,7 +347,7 @@
 													name="enviar"
 													class="button is-primary is-blue is-rounded is-fullwidth has-text-weight-semibold"
 												>
-													Enviar
+													Envoyer
 												</button>
 											</div>
 										</div>
@@ -683,7 +683,8 @@
 				newsletter.addEventListener("submit",(e)=>{
 					e.preventDefault();
 					let data = new FormData(newsletter);
-					fetch('./mail.php',{
+					data.append("lang","FR");
+					fetch('../mail.php',{
 						method: 'POST',
 						body: data
 					})

@@ -97,9 +97,10 @@
 							</h2>
 							<a
 								href="#contacto"
-								class="button is-black has-text-weight-semibold is-size-8-mobile is-size-5-tablet p-4"
+								class="button is-black has-text-weight-semibold is-size-8-mobile is-size-5-tablet"
 								>DEMANDER À ÊTRE RAPPELÉS PAR CALPE HOME GROUP</a
 							>
+
 						</div>
 						<div class="column">
 							<iframe width="100%" height="400" src="https://www.youtube.com/embed/P7XiQ-osgRQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -200,7 +201,7 @@
 
 							<a
 								href="#contacto"
-								class="button is-blue has-text-weight-semibold is-size-8-mobile is-size-5-tablet p-3"
+								class="button is-blue has-text-weight-semibold is-size-8-mobile is-size-5-tablet"
 								>DEMANDER À ÊTRE RAPPELÉS PAR CALPE HOME GROUP
 							</a>
 
@@ -683,7 +684,8 @@
 				newsletter.addEventListener("submit",(e)=>{
 					e.preventDefault();
 					let data = new FormData(newsletter);
-					fetch('./mail.php',{
+					data.append("lang","BE");
+					fetch('../mail.php',{
 						method: 'POST',
 						body: data
 					})

@@ -115,7 +115,9 @@ address {
 }
 
 .is-size-8-mobile {
-	font-size: 0.85rem;
+	font-size: 0.75rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 .oculto {
