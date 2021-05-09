@@ -3,9 +3,9 @@ if ($_POST) {
     $to = "info@calpehomegroup.com "; // 
     if (isset($_POST['lang'])) {
         $lang = $_POST['lang'];
-        $subject = "Landing Google $lang - Nueva solicitud";
+        $subject = "Landing Facebook $lang - Nueva solicitud";
     } else {
-        $subject = "Landing Google - Nueva solicitud";
+        $subject = "Landing Facebook - Nueva solicitud";
     }
     $name = $_POST['nombre'];
     $email = $_POST['email'];

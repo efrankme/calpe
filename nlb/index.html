@@ -704,7 +704,7 @@
 				newsletter.addEventListener("submit", (e) => {
 					e.preventDefault();
 					let data = new FormData(newsletter);
-					data.append("lang","NL");
+					data.append("lang","NL BE");
 					fetch("../mail.php", {
 						method: "POST",
 						body: data,
